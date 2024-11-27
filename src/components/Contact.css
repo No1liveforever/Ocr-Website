@@ -1,0 +1,185 @@
+/* General Page Styles */
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f5ff; /* Apply light background color to the entire page */
+  padding-bottom: 40px; /* Add padding at the bottom to space out the footer */
+}
+
+/* Banner Section */
+.contact-banner {
+  width: 100%;
+  position: relative;
+  background-color: #f3f5ff; /* Ensure the banner blends with the page background */
+}
+
+.contact-banner-image {
+  width: 100%;
+  height: 200px; /* Adjust as needed */
+  object-fit: cover; /* Ensures the image covers the entire area */
+}
+
+.contact-banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+/* Contact Details Section */
+.contact-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+  padding: 0 40px; /* Add padding to left and right */
+  box-sizing: border-box;
+  background-color: #f3f5ff; /* Light background color for contact details section */
+}
+
+.location-details {
+  flex: 1;
+  padding-right: 20px; /* Space between text and images */
+}
+
+.location-text {
+  margin-bottom: 20px;
+}
+
+.flag-images {
+  display: flex;
+  justify-content: flex-end; /* Align images to the right */
+  align-items: center;
+  flex: 1;
+}
+
+.flag-image {
+  margin-left: 10px; /* Space between images */
+  width: 200px;
+  height: auto;
+}
+
+/* Review Form and Map Section */
+.review-form-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 40px;
+  padding: 20px;
+  border-top: 1px solid #e0e0e0;
+  width: 100%; /* Ensure full width */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  background-color: #f3f5ff; /* Light background color for review form section */
+}
+
+.review-form {
+  flex: 1;
+  margin-right: 20px; /* Small gap between form and map */
+  width: 50%; /* Take half of the width */
+}
+
+.review-form h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif; /* Use Roboto for headings */
+}
+
+.review-form p {
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif; /* Use Roboto for paragraphs */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Roboto', sans-serif; /* Use Roboto for labels */
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif; /* Use Roboto for inputs */
+}
+
+.submit-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #8f00ff;
+  color: white;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif; /* Use Roboto for button text */
+}
+
+/* Map Section */
+.map-section {
+  flex: 1;
+  width: 50%; /* Take half of the width */
+  height: 400px; /* Set a height for the map section */
+  margin-left: 20px; /* Small gap between form and map */
+}
+
+.map-iframe {
+  width: 100%;
+  height: 100%;
+  border: none; /* Remove default border */
+  border-radius: 8px; /* Rounded corners for a nice effect */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+  .contact-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .location-details,
+  .flag-images {
+    flex: 1;
+    text-align: center;
+  }
+
+  .flag-image {
+    width: 150px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .review-form-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-form, .map-section {
+    width: 100%; /* Full width on smaller screens */
+    margin-right: 0;
+    margin-bottom: 20px;
+    height: 300px; /* Adjust height for smaller screens */
+  }
+
+  .map-section {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-details {
+    padding: 0 20px;
+  }
+
+  .map-section {
+    height: 300px; /* Adjust for smaller screens */
+  }
+}

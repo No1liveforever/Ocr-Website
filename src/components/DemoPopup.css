@@ -1,0 +1,100 @@
+/* DemoPopup.css */
+
+/* Ensure the popup covers the screen and centers its content */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* High z-index to be on top of everything */
+  }
+  
+  /* Style the popup itself */
+  .popup-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
+    position: relative;
+  }
+  
+  /* Title styling */
+  .popup-content h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; /* Dark text for better readability */
+  }
+  
+  /* Paragraph styling */
+  .popup-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styling */
+  .popup-content form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Input field styling */
+  .popup-content input,
+  .popup-content select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  /* Submit button styling */
+  .popup-content .submit-button {
+    background-color: #28a745; /* Bootstrap green color */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  .popup-content .submit-button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  /* Close button styling */
+  .popup-content .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #888; /* Light gray color */
+  }
+  
+  .popup-content .close-button:hover {
+    color: #333; /* Darker gray on hover */
+  }
+  
+  /* List styling */
+  .popup-content ul {
+    list-style-type: disc;
+    margin: 10px 0 20px 20px;
+    color: #555;
+  }
+  

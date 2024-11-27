@@ -1,0 +1,129 @@
+/* General Footer Styles */
+.footer-container {
+  background-color: #6262B7; /* Footer background color */
+  color: #ffffff; /* Footer text color */
+  display: flex; /* Flexbox layout for alignment */
+  justify-content: space-between; /* Space out sections */
+  padding: 2rem; /* Padding inside the footer */
+  font-size: 0.9rem; /* Base font size */
+  font-family: 'Roboto', sans-serif; /* Font family for footer text */
+  box-sizing: border-box; /* Include padding and border in element's width and height */
+}
+
+/* Footer Content Container */
+.footer-content {
+  display: flex; /* Use flexbox to align children */
+  flex-direction: row; /* Arrange children in a row */
+  flex-wrap: wrap; /* Wrap if necessary */
+  align-items: flex-start; /* Align items at the top */
+  width: 100%; /* Full width for container */
+}
+
+/* Footer Section Styling */
+.footer-section {
+  flex: 1; /* Each section takes equal space */
+  margin: 0 1rem; /* Margin around each section */
+  min-width: 180px; /* Minimum width to prevent too small sections */
+}
+
+.footer-section.about {
+  flex: 2; /* Give more space to the about section */
+}
+
+/* Footer Section Headers */
+.footer-section h4 {
+  margin-bottom: 1rem; /* Space below headers */
+  font-size: 1.2rem; /* Larger font size for headers */
+  font-weight: bold; /* Bold font weight */
+}
+
+/* Footer Lists */
+.footer-section ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+/* Footer List Items */
+.footer-section ul li {
+  margin-bottom: 0.5rem; /* Space between list items */
+}
+
+/* Footer Logo */
+.footer-logo {
+  max-width: 120px; /* Max width for the logo */
+  margin-bottom: 1rem; /* Space below the logo */
+}
+
+/* Footer About Section */
+.footer-section.about p {
+  line-height: 1.5; /* Line height for readability */
+}
+
+/* Footer Contact Section */
+.footer-section.contact ul li {
+  display: flex; /* Flexbox for alignment */
+  align-items: center; /* Align items in the center vertically */
+}
+
+/* Footer Contact Icons */
+.footer-section.contact ul li i,
+.footer-section.contact ul li {
+  margin-right: 0.5rem; /* Space between icons and text */
+}
+
+/* Social Media Icons */
+.social-icons {
+  display: flex; /* Flexbox layout for icons */
+  gap: 1rem; /* Space between icons */
+  margin-top: 1rem; /* Space above social media section */
+}
+
+.social-icons a {
+  color: #ffffff; /* White color for icons */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.social-icons a:hover {
+  color: #d4d4d4; /* Light grey color on hover */
+}
+
+.social-icons i {
+  font-size: 1.5rem; /* Size of the social media icons */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 991px) {
+  .footer-container {
+      flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+
+  .footer-section {
+      flex: 1 1 100%; /* Each section takes full width on small screens */
+      margin: 1rem 0; /* Margin adjustments for small screens */
+      text-align: center; /* Center text in each section */
+  }
+
+  .footer-section.about {
+      flex: 1 1 100%; /* Full width for about section on small screens */
+  }
+
+  .social-icons {
+      justify-content: center; /* Center align social icons */
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-container {
+      flex-direction: column; /* Stack sections vertically */
+  }
+
+  .footer-section {
+      margin: 1rem 0; /* Margin adjustments for smaller screens */
+  }
+
+  .social-icons {
+      margin-top: 1rem; /* Ensure space above social icons */
+  }
+}

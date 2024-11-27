@@ -1,0 +1,65 @@
+/* VideoModal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(230, 230, 250, 0.9); /* Light purple overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeIn 0.3s forwards; /* Fade-in animation */
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .modal-content {
+    background-color: #f8f8ff; /* GhostWhite color for a soft look */
+    padding: 20px;
+    border-radius: 10px; /* Increased border-radius for more rounded corners */
+    text-align: center;
+    position: relative;
+    width: 80%;
+    max-width: 700px; /* Increased max-width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box-shadow for a subtle elevation effect */
+    transform: scale(0.7);
+    animation: scaleUp 0.3s forwards; /* Scale-up animation */
+  }
+  
+  @keyframes scaleUp {
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 4px;
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: #800080; /* Dark purple color */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+
+  }
+  
+  .close-button:hover {
+    color: #dda0dd; /* Light purple color on hover */
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the video */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for the video */
+    opacity: 0;
+    animation: fadeIn 0.3s 0.3s forwards; /* Delayed fade-in animation */
+  }
+  

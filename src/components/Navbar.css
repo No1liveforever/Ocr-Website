@@ -1,0 +1,167 @@
+/* General Navbar Styles */
+.navbar {
+  background: linear-gradient(to right, #f3f5ff, #edf7f6); /* Light gradient background */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%; /* Ensure navbar spans full width */
+  padding: 0; /* Remove any padding */
+  margin: 0; /* Remove any margin */
+}
+
+/* Adjust the container to span full width */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* Set the width to 100% to span full width */
+  max-width: 1200px; /* Optional: limit maximum width for better readability */
+  height: 100%; /* Set the height to 74px */
+  padding: 0 ; /* Add some padding to the left and right */
+}
+
+/* Logo Styles */
+.navbar-logo .logo-image {
+  height: 60px; /* Adjust the height of the logo */
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 70px; /* Space between menu items */
+}
+
+.nav-item {
+  position: relative; /* Position for dropdown */
+}
+
+.nav-links {
+  color: #8a8a8a; /* Light grey color for links */
+  text-decoration: none;
+  font-size: 1.125rem; /* Font size: 18px */
+  font-family: 'Merriweather', serif; /* Font family from the CSS */
+  font-weight: 400; /* Regular weight */
+  padding: 0.75rem 1rem; /* Padding for the links */
+  display: inline-block; /* To maintain space for dropdown */
+}
+
+.nav-links:hover,
+.nav-links.active {
+  color: rgb(61, 51, 204); /* Red color on hover or active */
+}
+
+/* Dropdown Menu Styles */
+.dropdown-content {
+  display: none; /* Hide dropdown by default */
+  position: absolute;
+  top: 100%; /* Position below the parent element */
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 999; /* Ensure it stays above other elements */
+  min-width: 210px; /* Minimum width for dropdown */
+  min-height: 130px; /* Minimum width for dropdown */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px 0; /* Space for the dropdown items */
+}
+
+.dropdown-content .dropdown-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content .dropdown-link:hover {
+  background-color: #f1f1f1; /* Light grey background on hover */
+}
+
+.dropdown-content .dropdown-icon {
+  width: 24px; /* Adjust the icon size */
+  height: 24px;
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.dropdown-content .dropdown-text {
+  font-size: 1rem; /* Font size: 16px */
+  font-family: 'Open Sans', sans-serif; /* Font family */
+}
+
+.nav-item.dropdown:hover .dropdown-content {
+  display: block; /* Show the dropdown on hover */
+}
+
+/* Common button styles for consistency */
+.btn {
+  display: inline-flex; /* Ensures the button text is vertically centered */
+  justify-content: center; /* Centers the text horizontally */
+  align-items: center; /* Centers the text vertically */
+  padding: 0; /* Uniform padding for all buttons */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 1rem; /* Font size */
+  font-family: 'Open Sans', sans-serif; /* Font family */
+  font-weight: 600; /* Semi-bold weight */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-transform: uppercase; /* Uppercase text */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+  max-width: 170px; /* Minimum width to ensure both buttons are the same size */
+  max-height: 40px; /* Minimum width to ensure both buttons are the same size */
+  text-align: center; /* Center text inside the button */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Primary button styles */
+.btn-primary {
+  margin-top: 10px;
+  background-color: #8f00ff; /* Bright purple background */
+  color: #fff; /* White text color */
+  border: none; /* No border for primary button */
+}
+
+.btn-primary:hover {
+  background-color: #6700cc; /* Darker purple on hover */
+}
+
+/* Secondary button styles */
+.btn-secondary {
+  background-color: transparent; /* Transparent background */
+  color: #8f00ff; /* Primary color for text */
+  border: 2px solid #8f00ff; /* Border with primary color */
+}
+
+.btn-secondary:hover {
+  background-color: #c3bfc7; /* Lighter background on hover */
+  color: #fff; /* White text color */
+  border-color: #6700cc; /* Darker border color */
+}
+
+/* Ensure buttons have the same size */
+.cta-buttons .btn {
+  width: auto; /* Allow buttons to resize automatically but maintain the same width */
+}
+
+/* Specific adjustments for button containers in navbar */
+.cta-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .btn {
+    font-size: 0.875rem; /* Adjust font size for smaller screens */
+    padding: 10px 16px; /* Adjust padding for smaller screens */
+    min-width: auto; /* Remove min-width for smaller screens */
+  }
+
+  .cta-buttons {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    gap: 10px; /* Space between buttons */
+  }
+}

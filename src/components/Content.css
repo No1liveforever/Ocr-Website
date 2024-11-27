@@ -1,0 +1,798 @@
+/* General content styling */
+.content-container {
+  background-color: #f3f5ff; /* Light background color */
+  padding: 40px 0; /* Top and bottom padding */
+  text-align: center; /* Center text alignment */
+}
+
+/* Main title styles */
+.main-title {
+  font-size: 2.8125rem; /* Font size 45px */
+  margin: 20px 0; /* Vertical margin */
+  font-family: 'Roboto', sans-serif; /* Font family */
+  color: #000; /* Black color */
+}
+
+.main-title .text-black {
+  color: #000; /* Black color for specific text */
+}
+
+/* Highlight text style for 'with DAISYOCR' */
+.highlight-text {
+  color: #8f00ff; /* Bright purple color */
+}
+
+/* Subtitle text styles */
+.sub-text {
+  font-size: 1.125rem; /* Font size 18px */
+  color: #6c757d; /* Grayish color */
+  margin: 10px 0 30px; /* Vertical margin */
+}
+
+/* Buttons container */
+.buttons {
+  display: flex;
+  justify-content: center; /* Center align buttons */
+  gap: 100px; /* Space between buttons */
+  margin: 20px 0; /* Vertical margin */
+}
+/* Common button styles for consistency */
+.btn {
+  display: inline-flex; /* Ensures the button text is vertically centered */
+  justify-content: center; /* Centers the text horizontally */
+  align-items: center; /* Centers the text vertically */
+  padding: 10px 20px; /* Same padding for both primary and secondary buttons */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 1rem; /* Font size */
+  font-family: 'Open Sans', sans-serif; /* Font family */
+  font-weight: 600; /* Semi-bold weight */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-transform: uppercase; /* Uppercase text */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+/* Primary button styles */
+.btn-primary {
+  background-color: #8f00ff; /* Bright purple background */
+  color: #fff; /* White text color */
+}
+
+.btn-primary:hover {
+  background-color: #6700cc; /* Darker purple on hover */
+}
+
+/* Secondary button styles to match Navbar */
+.btn-secondary {
+  background-color: transparent; /* Transparent background */
+  color: #8f00ff; /* Primary color for text */
+  border: 2px solid #8f00ff; /* Border with primary color */
+  min-width: 200px;
+  padding: 8px 15px; /* Ensure padding matches primary button */
+}
+
+.btn-secondary:hover {
+  background-color: #c3bfc7; /* Lighter background on hover */
+  color: #fff; /* White text color */
+  border-color: #6700cc; /* Darker border color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .btn {
+    font-size: 0.875rem; /* Adjust font size for smaller screens */
+    padding: 10px 16px; /* Adjust padding for smaller screens */
+  }
+
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    gap: 10px; /* Space between buttons */
+  }
+}
+
+
+/* Trusted by text */
+.trusted-by {
+  font-size: 1rem; /* Font size 16px */
+  color: #83868a; /* Slightly darker gray */
+  margin-top: 30px; /* Top margin */
+}
+
+/* Additional image container */
+.additional-image-container {
+  overflow: hidden; /* Hide overflow to create the scrolling effect */
+  position: relative; /* Position relative to contain the absolute positioned items */
+  width: 100%; /* Ensure the container takes the full width */
+}
+
+/* Scrolling images */
+.scroll-images {
+  display: flex;
+  gap: 20px; /* Space between images */
+  animation: scroll 20s linear infinite; /* Apply the scrolling animation */
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(10%); /* Start from the right */
+  }
+  100% {
+    transform: translateX(-90%); /* Move to the left */
+  }
+}
+
+/* Additional image styles */
+.additional-image {
+  width: 140px; /* Set a fixed width for all images */
+  height: 110px; /* Maintain aspect ratio */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1199px) {
+  .main-title {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .sub-text {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 767px) {
+  .main-title {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+
+  .sub-text {
+    font-size: 0.875rem; /* Adjust font size for smaller screens */
+  }
+
+  .btn {
+    font-size: 0.875rem; /* Adjust font size for smaller screens */
+    padding: 10px 16px; /* Adjust padding for smaller screens */
+  }
+
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    gap: 10px; /* Space between buttons */
+  }
+
+  .additional-image {
+    width: 60px; /* Adjust image size for smaller screens */
+  }
+}
+/* About Us Section */
+.about-section {
+  display: flex;
+  justify-content: space-between; /* Space between text and image */
+  align-items: center; /* Align items vertically */
+  background-color: #f3f5ff; /* Light background color */
+  padding: 40px 0; /* Top and bottom padding */
+  text-align: left; /* Left-align text */
+  gap: 10px; /* Reduce gap between text and image */
+
+}
+
+.about-content {
+  max-width: 50%; /* Restrict max width to 50% */
+  padding-right: 20px; /* Right padding */
+  padding-left: 40px; /* Right padding */
+
+}
+
+.about-title {
+  font-size: 2.5rem; /* Font size */
+  margin-bottom: 20px; /* Bottom margin */
+  color: #000; /* Black color */
+}
+
+.about-title .text-black {
+  color: #000; /* Black color for specific text */
+  display: flex;
+}
+
+.about-description {
+  font-size: 1.5rem; /* Font size */
+  color: #83868a; /* Darker color */
+  margin-bottom: 30px; /* Bottom margin */
+}
+
+.about-btn {
+  background-color: #8f00ff; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  border-radius: 10px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem; /* Font size */
+  font-family: 'Open Sans', sans-serif; /* Font family */
+  font-weight: 600; /* Semi-bold weight */
+  margin-top: 10px;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.about-btn:hover {
+  background-color: #6700cc; /* Darker background on hover */
+  color: #fff; /* Ensure text color stays white */
+}
+
+.about-image {
+  max-width: 70%; /* Restrict max width to 50% */
+  text-align: right; /* Align image to the right */
+}
+
+.about-img {
+  max-width: 100%; /* Ensure the image takes the full width of its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive adjustments for About Us Section */
+@media (max-width: 800px) {
+  .about-section {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+    text-align: center; /* Center-align text */
+  }
+
+  .about-content, .about-image {
+    max-width: 100%; /* Take full width on smaller screens */
+  }
+
+  .about-content {
+    padding-right: 10; /* Remove right padding */
+  }
+
+  .about-title {
+    font-size: 2rem; /* Adjust font size */
+  }
+
+  .about-description {
+    font-size: 0.875rem; /* Adjust font size */
+  }
+}
+
+
+/* Features Section */
+/* General container styles */
+.features-container, .modules-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  padding: 40px 0; /* Top and bottom padding */
+  background-color: #f3f5ff; /* Adjust as needed for visual consistency */
+  gap: 20px; /* Space between items */
+}
+
+/* Common styles for feature and module items */
+.feature, .module {
+  background-color: #f3f5ff; /* White background */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 20px; /* Padding inside each feature box */
+  text-align: center; /* Center text alignment */
+  transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+  width: 250px; /* Fixed width for uniform size */
+  max-width: calc(25% - 30px); /* Adjust width for grid layout */
+}
+
+.feature:hover, .module:hover {
+  box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+.feature img, .module img {
+  width: 67px; /* Adjust the width */
+  height: 67px; /* Maintain aspect ratio */
+  margin-bottom: 15px; /* Space below the image */
+}
+
+.feature p, .module p {
+  font-size: 0.875rem; /* Font size */
+  color: #333; /* Text color */
+  margin: 10px 0; /* Top and bottom margin */
+  font-weight: 700; /* Bold text */
+}
+/* Modules Section */
+.modules-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px;
+  background-color: #f3f5ff; /* Adjust as needed */
+  margin-top: 40px; /* Add space between sections */
+}
+/* How Businesses Use DAISY OCR Section */
+.usage-section {
+  background-color: #f3f5ff; /* Light background color */
+  padding: 40px 0; /* Top and bottom padding */
+  text-align: center; /* Center text alignment */
+}
+
+.usage-title {
+  font-size: 2.3rem; /* Font size */
+  margin-bottom: 20px; /* Bottom margin */
+  color: #83868a; /* Black color */
+}
+
+.usage-layout {
+  display: flex;
+  justify-content: center; /* Center align items */
+  align-items: center; /* Center vertically */
+  flex-wrap: wrap; /* Wrap content */
+}
+
+.usage-row {
+  display: flex;
+  justify-content: space-between; /* Space between image and content */
+  align-items: center; /* Align items vertically */
+  width: 100%; /* Set width to 80% of the parent */
+  margin: 20px 0; /* Vertical margin */
+}
+
+.usage-image {
+  flex: 1; /* Image takes half width */
+  padding: 20px; /* Padding */
+  max-width: 50%; /* Ensure it takes up to half the width */
+  text-align: center; /* Center-align the image */
+}
+
+.usage-image img {
+  width: 90%; /* Ensure the image takes full width of its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.usage-content {
+  flex: 1; /* Content takes half width */
+  padding: 20px; /* Padding */
+  text-align: left; /* Align text to the left */
+  max-width: 50%; /* Ensure it takes up to half the width */
+  margin-right: 20px;
+}
+
+.usage-subtitle {
+  font-size: 1.5rem; /* Font size */
+  color: #000; /* Black color */
+  margin-bottom: 5px; /* Bottom margin */
+}
+
+.usage-description {
+  font-size: 1.55rem; /* Font size */
+  color: #333; /* Darker color */
+}
+
+.usage-detail {
+  font-size: 1rem; /* Font size */
+  color: #83868a; /* Darker color */
+  margin-bottom: 10px; /* Bottom margin */
+  margin-top: 5px;
+}
+
+.usage-link {
+  color: #478ac9; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.usage-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1199px) {
+  .usage-title {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+
+  .usage-row {
+    flex-direction: column; /* Stack vertically */
+    text-align: center; /* Center-align text */
+  }
+
+  .usage-image,
+  .usage-content {
+    max-width: 100%; /* Full width */
+    padding: 10px; /* Padding */
+  }
+
+  .usage-content {
+    text-align: center; /* Center-align text for smaller screens */
+  }
+}
+
+@media (max-width: 767px) {
+  .usage-title {
+    font-size: 1.75rem; /* Adjust font size for smaller screens */
+  }
+
+  .usage-subtitle,
+  .usage-description,
+  .usage-detail {
+    text-align: center; /* Center-align text for smaller screens */
+  }
+
+  .usage-row {
+    flex-direction: column; /* Stack vertically */
+    text-align: center; /* Center-align text */
+  }
+
+  .usage-image,
+  .usage-content {
+    max-width: 100%; /* Full width */
+    padding: 10px; /* Padding */
+  }
+}
+/* Use Case Section */
+.use-case-section {
+  background-color: #f3f5ff; /* Light background color */
+  padding: 0 0; /* Top and bottom padding */
+  text-align: center; /* Center text alignment */
+  margin-left: 15px; /* Bottom margin */
+
+}
+
+.use-case-layout {
+  display: flex;
+  justify-content: center; /* Center align items */
+  align-items: center; /* Center vertically */
+  flex-wrap: wrap; /* Wrap content */
+}
+
+.use-case-row {
+  display: flex;
+  justify-content: space-between; /* Space between text and image */
+  align-items: center; /* Align items vertically */
+  width: 100%; /* Set width to 80% of the parent */
+  margin: 20px 0; /* Vertical margin */
+}
+
+.use-case-content {
+  flex: 1.5; /* Content takes more width */
+  padding: 20px; /* Padding */
+  text-align: left; /* Align text to the left */
+  max-width: 50%; /* Ensure it takes up to half the width */
+}
+
+.use-case-image {
+  flex: 1; /* Image takes part of the width */
+  max-width: 200%; /* Ensure it takes up to 40% of the width */
+  padding: 20px; /* Padding */
+  text-align: center; /* Center-align the image */
+}
+
+.use-case-image img {
+  width: 100%; /* Ensure the image takes full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add some rounding to the image */
+}
+
+.use-case-title {
+  font-size: 1.75rem; /* Font size */
+  color: #000; /* Black color */
+  margin-bottom: 10px; /* Bottom margin */
+}
+
+.use-case-description {
+  font-size: 1.25rem; /* Font size */
+  color: #333; /* Darker color */
+  margin-bottom: 10px; /* Bottom margin */
+}
+
+.use-case-detail {
+  font-size: 1rem; /* Font size */
+  color: #83868a; /* Darker color */
+  margin-top: 10px; /* Bottom margin */
+  margin-bottom: 10px;
+
+}
+
+.use-case-link {
+  color: #478ac9; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.use-case-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1199px) {
+  .use-case-row {
+    flex-direction: column; /* Stack vertically */
+    text-align: center; /* Center-align text */
+  }
+
+  .use-case-content,
+  .use-case-image {
+    max-width: 100%; /* Full width */
+    padding: 10px; /* Padding */
+  }
+
+  .use-case-content {
+    text-align: center; /* Center-align text for smaller screens */
+  }
+}
+
+@media (max-width: 767px) {
+  .use-case-title {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .use-case-description,
+  .use-case-detail {
+    text-align: center; /* Center-align text for smaller screens */
+  }
+
+  .use-case-content,
+  .use-case-image {
+    flex: unset; /* Reset flex */
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding */
+  }
+}
+
+.modules-text {
+  max-width: 50%;
+}
+
+.modules-text h1 {
+  font-size: 36px;
+  color: #333; /* Adjust as needed */
+}
+
+.modules-text .highlight {
+  color: #ff6347; /* Adjust as needed */
+}
+
+.modules-text p {
+  font-size: 18px;
+  color: #555; /* Adjust as needed */
+}
+
+.modules-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.modules-text {
+  margin-bottom: 2rem;
+}
+
+.modules-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.module {
+  flex: 0 1 calc(25% - 2rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #f3f5ff;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.module img {
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
+.module p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.module:hover {
+  transform: scale(1.05);
+}
+
+.highlight {
+  color: #ff6f61; /* Adjust the color as needed */
+  
+}
+/* Slider Section */
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 500px; /* Adjust height as needed */
+}
+
+.slider-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+  position: relative;
+  min-width: 100%;
+  height: 500px; /* Match this to the slider height */
+  background-size: cover;
+  background-position: center;
+  display: none;
+}
+
+.slider-item.active {
+  display: block;
+}
+
+.slider-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75); /* 55% opacity shading */
+  z-index: 1;
+}
+
+.slider-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centering */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 2; /* Ensure content is above the overlay */
+  text-align: center; /* Center text alignment */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out; /* Smooth transition for fade-in/out */
+}
+
+/* Animation Classes */
+.fade-out {
+  opacity: 0; /* Fade out */
+}
+
+.fade-in {
+  opacity: 1; /* Fade in */
+}
+
+/* Title Styling */
+.slider-title {
+  font-size: 60px; /* Set the font size */
+  font-family: 'Open Sans', sans-serif; /* Use Roboto font */
+  color: #ffffff; /* Set text color to white */
+  margin: 0; /* Remove default margins */
+  animation: fadeInOut 1s ease-in-out;
+}
+
+/* Description Styling */
+.slider-description {
+  font-size: 24px; /* Set the font size to 24px */
+  font-family: 'Roboto', sans-serif; /* Use Roboto font */
+  color: #ffffff; /* Set text color to white */
+  margin: 10px 0; /* Space between title and description */
+  animation: fadeInOut 1s ease-in-out;
+}
+
+.slider-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  animation: fadeInOut 1s ease-in-out;
+}
+
+.slider-control-prev,
+.slider-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+  z-index: 2; /* Ensure controls are above the overlay */
+}
+
+.slider-control-prev {
+  left: 10px;
+}
+
+.slider-control-next {
+  right: 10px;
+}
+
+.slider-control-icon {
+  font-size: 2rem;
+}
+
+.slider-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 2; /* Ensure indicators are above the overlay */
+}
+
+.slider-indicators li {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-indicators li.active {
+  background-color: #333;
+}
+
+
+/* New Container Styling */
+.outer-container {
+  width: 975px;
+  height: 212px;
+  background-color: #f3f5ff; /* White background color */
+  border-radius: 10px; /* Rounded corners */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto; /* Center horizontally and add some space above */
+}
+
+.inner-container {
+  width: 90%;
+  height: 90%;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font */
+  background: linear-gradient(135deg, #391053, #6262b7); /* Smooth gradient blend */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.title-text {
+  font-size: 26px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.title-text2 {
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.demo-button {
+  padding: 10px 20px;
+  background-color: #391053; /* Use a darker color for the button */
+  color: white;
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.demo-button:hover {
+  background-color: #6262b7; /* Lighter shade for hover effect */
+}
+
+/*
+/* Keyframes for fade-in/out effect */
+/*@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}*/
